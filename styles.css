@@ -5,10 +5,12 @@
 body{
     background-image:url(images/bg-header-desktop.png);
     background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
 }
 .flex-grid-1{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
     /* background-color: darkblue; */
@@ -22,17 +24,51 @@ body{
 .item2{
     /* background-color: rebeccapurple; */
     align-self: flex-end;
-    font-size:x-large;
+    font-size: x-large;
+    color:  hsl(210, 10%, 33%);
 }
 .item3{
     align-self:center ;
     /* background-color: pink; */
-    font-size: larger;
-    width: 620px;
+    font-size:x-large;
+    width: 810px;
     text-align: center;
+    font-weight:bold;
+    color: hsl(201, 11%, 66%);
+}
+.item4{
+    align-self: flex-start;
 }
 .fon-1 {
     font-family: "Bai Jamjuree", sans-serif;
     font-weight: 400;
     font-style: normal;
+  }
+
+  .fon-2{
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .item4 > button{
+    padding: 20px;
+    width: 250px;
+    border-radius:34px;
+  }
+  button{
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    border: none;
+   
+
+  }
+  .btn1{
+    background-color:  hsl(171, 66%, 44%);
+    margin-right: 25px;
+    box-shadow: 0px 10px 30px 1px hsl(171, 68%, 81%);
+  }
+  .btn2{
+    background-color:hsl(233, 100%, 69%) ;
+    box-shadow: 0px 10px 30px 1px hsl(203, 19%, 86%);
   }
