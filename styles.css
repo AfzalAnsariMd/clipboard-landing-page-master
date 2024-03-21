@@ -267,6 +267,7 @@ button {
   justify-items: center;
   align-items: flex-start;
   gap: 34px;
+  margin-bottom: 80px;
 }
 .flex-grid-4>h1{
   color: hsl(210, 10%, 33%);
@@ -277,4 +278,27 @@ button {
   width: 58ch;
   text-align: center;
   line-height: 27px;
+}
+.last-container{
+  background-color: hsl(210, 12%, 97%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  height: 150px;
+}
+.instruction{
+ display: grid;
+ /* grid-template-rows: 1fr 1fr 1fr ; */
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+ /* width: 100px; */
+
+ 
+
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
 }
