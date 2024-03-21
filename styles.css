@@ -197,12 +197,13 @@ button {
   width: 75%;
   margin:0 auto;
   gap: 34px;
+  margin-bottom: 90px;
 }
 .triitem1{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
-  align-items: flex-start;
+  align-items: center;
   width: 55ch;
   text-align: center;
 
@@ -211,7 +212,7 @@ button {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
-  align-items: flex-start;
+  align-items: center;
   width: 55ch;
   text-align: center;
 
@@ -220,7 +221,7 @@ button {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
-  align-items: flex-start;
+  align-items: center;
   width: 55ch;
   text-align: center;
 
@@ -238,12 +239,42 @@ button {
   color: hsl(201, 11%, 66%);
   line-height: 27px;
   /* align-items: flex-end; */
+  /* align-self: ; */
 }
 .triitem2>p{
   color: hsl(201, 11%, 66%);
   line-height: 27px;
+  align-self: flex-start;
 }
 .triitem3>p{
   color: hsl(201, 11%, 66%);
+  line-height: 27px;
+  align-self: flex-start;
+}
+
+.links{
+  display: flex;
+  /* gap: 23px; */
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 90px;
+  
+   
+}
+.flex-grid-4{
+  display:grid ;
+  grid-template-rows: 1fr 2fr 1.7fr;
+  justify-items: center;
+  align-items: flex-start;
+  gap: 34px;
+}
+.flex-grid-4>h1{
+  color: hsl(210, 10%, 33%);
+  align-self: flex-end;
+}
+.flex-grid-4>p{
+  color:hsl(201, 11%, 66%) ;
+  width: 58ch;
+  text-align: center;
   line-height: 27px;
 }
