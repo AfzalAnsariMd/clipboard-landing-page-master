@@ -7,6 +7,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-position: top;
+  
 }
 .flex-grid-1 {
   display: grid;
@@ -282,15 +283,25 @@ button {
 .last-container{
   background-color: hsl(210, 12%, 97%);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1.6fr;
   justify-items: center;
   align-items: center;
-  height: 150px;
+  height: 155px;
+  /* width: 100%; */
 }
 .instruction{
  display: grid;
  /* grid-template-rows: 1fr 1fr 1fr ; */
- grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr;
+ /* align-items: flex-start; */
+ /* background-color: aquamarine; */
+ justify-items: center;
+ align-items: center;
+ /* justify-items: flex-start; */
+ /* justify-self: flex-start; */
+ width: 100%;
+ /* row-gap: 23px; */
 
  /* width: 100px; */
 
@@ -301,4 +312,17 @@ button {
   display: flex;
   flex-direction: row;
   gap: 25px;
+}
+.footer1,.footer2,.footer3{
+  color:hsl(201, 11%, 66%) ;
+  /* line-height: 40px; */
+  /* background-color: red; */
+}
+.footer1,.footer2,.footer3{
+ display: grid;
+ grid-template-rows: 1fr 1fr;
+ align-items: center;
+ justify-items: flex-start;
+ gap:23px
+
 }
