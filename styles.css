@@ -69,7 +69,7 @@ button {
 }
 .btn1 {
   background-color: hsl(171, 66%, 44%);
-  margin-right: 25px;
+  /* margin-right: 25px; */
   box-shadow: 0px 10px 30px 1px hsl(171, 68%, 81%);
 }
 .btn2 {
@@ -135,6 +135,7 @@ button {
   justify-items: left;
   align-items: center;
   width: 50%;
+  margin-left: 100px;
   /* margin-left: 50px; */
 }
 
@@ -143,21 +144,21 @@ button {
   /* align-self: center; */
   display: grid;
   grid-template-rows: 0.6fr 1fr;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 .alpha2 {
   /* background-color: sandybrown; */
   /* align-self: center; */
   display: grid;
   grid-template-rows: 0.6fr 1fr;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 .alpha3 {
   /* background-color: seagreen; */
   /* align-self: flex-start; */
   display: grid;
   grid-template-rows: 0.6fr 1fr;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 
 .flex-grid-3 {
@@ -333,30 +334,33 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-position: top;
-    background-color: navajowhite;
-    border: 3px solid red;
+    
+    /* background-color: navajowhite; */
+    /* border: 3px solid red; */
   }
   .full-container {
     /* background-color: red; */
+    width: fit-content;
   }
   .flex-grid-1 {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-items: center;
+    gap: 34px;
     /* background-color: darkblue; */
-    margin-top: 107px;
+    /* margin-top: 107px; */
     /* margin-bottom: 70px; */
   }
   .item1 {
-    align-self: flex-start;
+    align-self: center;
 
     /* width: 1; */
     /* background-color: saddlebrown; */
   }
   .item2 {
     /* background-color: rebeccapurple; */
-    align-self: flex-end;
+    align-self: center;
     font-size: 15px;
     color: hsl(210, 10%, 33%);
     width: 330px;
@@ -374,7 +378,7 @@ button {
     line-height: 27px;
   }
   .item4 {
-    align-self: flex-start;
+    align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
@@ -382,7 +386,16 @@ button {
     /* width:; */
   }
   .item4 > button {
-    width: 310px;
+    width: 320px;
+    align-self: center;
+    justify-self: center;
+    /* background-color: red; */
+  }
+  .btn1,.btn2{
+    /* align-self: center; */
+    /* background-color: red; */
+    align-self: center;
+    justify-self: center;
   }
 
   .header2 {
@@ -404,13 +417,14 @@ button {
     width: 320px;
     text-align: center;
   }
-
+ 
   .flex-grid-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 100px;
+    /* background-color: red; */
   }
   .left-container > img {
     /* background-color: red; */
@@ -424,24 +438,53 @@ button {
   }
   .alpha1 > p {
     text-align: center;
+    width: 320px;
   }
   .alpha2 > p {
-    text-align: center;
+    text-align: center;width: 320px;
   }
   .alpha3 > p {
-    text-align: center;
+    text-align: center;width: 320px;
   }
   .right-container {
     display: grid;
-    grid-template-rows: 1fr 0.1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     /* background-color: red; */
     justify-content: center;
     align-content: center;
-    width: fit-content;
+    width:fit-content;
     /* width: 50%; */
     /* margin-left: 50px; */
     /* background-color: red; */
   }
+
+  .alpha1 {
+    /* background-color: saddlebrown; */
+    align-content: center;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 0.6fr 1fr;
+    margin-right: 100px;  
+    /* width: 250px; */
+  }
+  .alpha2 {
+    /* background-color: sandybrown; */
+    /* align-self: center; */
+    display: grid;
+    grid-template-rows: 0.6fr 1fr;
+    /* margin-left: 100px; */
+  }
+  .alpha3 {
+    /* background-color: seagreen; */
+    /* align-self: flex-start; */
+    display: grid;
+    grid-template-rows: 0.6fr 1fr;
+    /* margin-left: 100px; */
+  }
+  
+
+  
+
   .flex-grid-3 > h1 {
     width: 320px;
     text-align: center;
@@ -482,10 +525,26 @@ button {
     justify-content: center;
     align-items: center;
   }
+  .flex-grid-4 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 34px; */
+    /* margin-bottom: 80px; */
+  }
+
   .flex-grid-4 > h1 {
     width: 320px;
     text-align: center;
     font-size: 30px;
+    /* align-self: flex-start; */
+    align-self: center;
   }
   .flex-grid-4 > p {
     width: 320px;
@@ -497,12 +556,18 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: fit-content;
+   
+  }
+  .last-container>img{
+    margin-bottom: 34px;
   }
   .instruction{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 25px;
   }
   .footer1{
     display: flex;
@@ -518,5 +583,12 @@ button {
     justify-content: center;
     align-items: center;
     line-height: 45px;
+  }
+  .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
   }
 }
