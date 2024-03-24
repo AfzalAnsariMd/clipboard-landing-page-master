@@ -13,6 +13,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-position: top;
+  background-size: 100%
+  /* background-position: center; */
+  /* background-size: cover;  */
 }
 .flex-grid-1 {
   display: grid;
@@ -328,19 +331,24 @@ button {
   gap: 23px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 900px) {
   body {
     background-image: url(images/bg-header-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
     background-position: top;
+    background-size: 100%;
+    /* background-size: cover;  */
+    
+    /* /* background-position: center; */
+    /* background-position: top; */ 
     
     /* background-color: navajowhite; */
     /* border: 3px solid red; */
   }
   .full-container {
     /* background-color: red; */
-    width: fit-content;
+    /* width: fit-content; */
   }
   .flex-grid-1 {
     display: flex;
