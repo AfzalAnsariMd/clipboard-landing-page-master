@@ -570,6 +570,7 @@ button {
   }
   .last-container>img{
     margin-bottom: 34px;
+    margin-top: 50px;
   }
   .instruction{
     display: flex;
@@ -599,5 +600,7 @@ button {
     justify-content: center;
     align-items: center;
     column-gap: 50px;
+    margin-bottom: 50px;
+    /* margin: 50px 0; */
   }
 }
