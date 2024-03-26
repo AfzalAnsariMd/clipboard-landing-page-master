@@ -490,10 +490,16 @@ button {
     justify-content: center;
     align-items: center;
     height: fit-content;
+
+    padding-top: 50px;
   }
   .last-container > img {
     margin-bottom: 34px;
     margin-top: 50px;
+  }
+
+  .imgicon {
+    margin-bottom: 45px;
   }
   .instruction {
     display: flex;
